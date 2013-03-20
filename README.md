@@ -39,3 +39,7 @@ JLink
 You will need to configure the Makefile to match your JLink setup.  I use the JLink OSX libraries, so that make file is pointing to that.  You can setup the makefile to support OSX and Windows fairly easily.  On occasion, you might need to disconnect the JLink from your computer if it seems like flashing is not working.  Also, JLink drivers are pretty buggy on OSX and Linux, so you might want to be careful when upgrading to latest driver versions as they don't seem to test their driver updates very well.  I am considering getting another JTag board and trying OpenOCD.
 
 Hopefully, this is helpful.  Please let me know if you come up with any better tweaks or insights.
+
+NOTE: add the following to your .bashrc file:
+export DYLD_LIBRARY_PATH=/Users/<your home directory>/jlink:/opt/local/lib:$DYLD_LIBRARY_PATH
+
