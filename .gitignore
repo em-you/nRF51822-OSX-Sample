@@ -19,3 +19,9 @@
 
 *.jlink
 *.log
+
+build/*
+obj/*
+bin/*
+
+.DS_Store
