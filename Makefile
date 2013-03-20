@@ -142,6 +142,7 @@ all: release
 clean:
 	$(RM) $(OUTPUT_BINARY_DIRECTORY)/*
 	$(RM) $(OBJECT_DIRECTORY)/*
+	$(RM) $(LISTING_DIRECTORY)/*
 	- $(RM) JLink.log
 	- $(RM) .gdbinit
 
