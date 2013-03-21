@@ -16,6 +16,7 @@ obj/ - .o files
 projects/ - any IDE configuration files (Xcode project sample in there)
 src/ - source files
 test/ - unit tests
+tools/ - platform specific toolchains and jtag emulators
 
 Makefile targets
 ----------------

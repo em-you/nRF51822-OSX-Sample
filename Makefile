@@ -52,7 +52,7 @@ BLE_PATH += $(SDK_SOURCE_PATH)ble/ble_services
 OUTPUT_BINARY_DIRECTORY := build
 ELF := $(OUTPUT_BINARY_DIRECTORY)/$(OUTPUT_FILENAME).out
 
-GNU_INSTALL_ROOT := $(HOME)/arm-cs-tools
+GNU_INSTALL_ROOT := tools/OSX/arm-cs-tools
 GNU_VERSION := 4.6.3
 GNU_PREFIX := arm-none-eabi
 
@@ -79,8 +79,8 @@ MK 				:= mkdir
 RM 				:= rm -rf
 
 # Programmer
-JLINK = -JLinkExe
-JLINKGDBSERVER = JLinkGDBServer
+JLINK = -tools/OSX/jlink/JLinkExe
+JLINKGDBSERVER = tools/OSX/jlink/JLinkGDBServer
 
 OBJECT_DIRECTORY := obj
 LISTING_DIRECTORY := bin
